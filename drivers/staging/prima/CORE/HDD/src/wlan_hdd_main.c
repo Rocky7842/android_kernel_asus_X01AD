@@ -14375,7 +14375,7 @@ int hdd_wlan_startup(struct device *dev )
 
    if (VOS_STA_SAP_MODE == hdd_get_conparam())
    {
-     pAdapter = hdd_open_adapter( pHddCtx, WLAN_HDD_SOFTAP, "softap.%d", 
+     pAdapter = hdd_open_adapter( pHddCtx, WLAN_HDD_SOFTAP, "wlan0", 
          wlan_hdd_get_intf_addr(pHddCtx), FALSE );
    }
    else
